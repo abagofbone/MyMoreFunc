@@ -1,6 +1,12 @@
 ﻿/* eslint-disable no-unused-vars */
 /* global console setInterval, clearInterval */
 
+function myRexEx(iCalContent, rx) {
+  var arr = rx.exec(iCalContent);
+  return arr[1]; 
+}
+
+
 /**
  * Add two numbers
  * @customfunction
